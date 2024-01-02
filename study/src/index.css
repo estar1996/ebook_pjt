@@ -1,0 +1,57 @@
+
+@font-face {
+  font-family: "NEXONLv1GothinRegular";
+  font-weight: normal;
+  src: url("./fonts/NEXONLv1GothicRegular.ttf");
+}
+@font-face {
+  font-family: "NEXONLv1GothicBold";
+  font-weight: bold;
+  src: url("./fonts/NEXONLv1GothicBold.ttf");
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "NEXONLv1GothinRegular";
+  font-weight: bold;
+  background-image: url('../public/images/background/ebookimage.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* color: white; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: EBEAF0;
+}
+
+
+/* 모바일 */
+.some-class {
+  font-size: 14px;
+}
+
+/* 테블릿 및 데스크탑 */
+@media (min-width: 601px) {
+  .some-class {
+    font-size: 16px;
+  }
+}
+
+
+.div-all {
+  padding: 10px;
+  margin : 10px;
+}

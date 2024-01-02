@@ -1,0 +1,50 @@
+/* src/components/Book.module.css */
+
+
+.bookImage {
+    width : 360px;
+    height: auto;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+}
+
+
+.boookText {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.book-page {
+    font-size: 1.5rem;
+    margin: 20px;
+    padding:10px;
+    line-height: 1.5;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+
+.quizButton {
+    width: 90%;
+    padding: 10px;
+    background-color: #4169ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.buttonContainer {
+    position: fixed; /* 고정 위치 */
+    bottom: 0; /* 화면 하단에 위치 */
+    left: 0; /* 화면 왼쪽에 위치 */
+    width: 100%; /* 전체 너비 */
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* 적당한 패딩 */
+    background-color: #f8f8f8; /* 배경 색상 */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* 상단에 그림자 효과 */
+}

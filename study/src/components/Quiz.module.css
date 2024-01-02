@@ -1,0 +1,50 @@
+
+.quizImage {
+    width : 360px;
+    height: auto;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.quizButton {
+    width: 70%; /* 버튼을 전체 너비로 설정 */
+    height: 40px;
+    padding: 10px 20px; /* 패딩 추가 */
+    margin: 5px 0; /* 상하 마진 추가 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 둥근 테두리 추가 */
+    color: rgb(0, 0, 0); /* 글자색 */
+    font-size: 16px; /* 글자 크기 */
+    cursor: pointer; /* 커서 스타일 */
+    background-color: #C6C6E8;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    
+  }
+  
+.buttonContainer {
+    text-align: center;
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+  }
+
+
+.questionNo {
+    padding: 5px;
+
+}
+
+
+.button {
+    width: 330px;
+    padding: 10px;
+    background-color: #a3a3e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

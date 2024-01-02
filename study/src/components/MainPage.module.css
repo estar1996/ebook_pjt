@@ -1,0 +1,50 @@
+.bookButton {
+    width: 80%; /* 버튼을 전체 너비로 설정 */
+    height: 100px;
+    padding: 10px 20px; /* 패딩 추가 */
+    margin: 5px 0; /* 상하 마진 추가 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 둥근 테두리 추가 */
+    color: white; /* 글자색 */
+    font-size: 16px; /* 글자 크기 */
+    cursor: pointer; /* 커서 스타일 */
+    
+  }
+  
+  .fungfungButton {
+    background-color: #6e55ff; /* 풍풍이 버튼 색상 */
+  }
+  
+  .bamaButton {
+    background-color: #41aaff; /* 바마 버튼 색상 */
+  }
+  
+  .heungbuButton {
+    background-color: #69c94c; /* 흥부와 놀부 버튼 색상 */
+  }
+
+.buttonContainer {
+  text-align: center;
+  justify-content: center; /* 가로 방향 중앙 정렬 */
+  align-items: center; /* 세로 방향 중앙 정렬 */
+}
+
+.welcomeDiv {
+  text-align: left;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.parentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circleProfile {
+  width: 100px;
+  height: 100px;
+  background-color: #C6C6E8;
+  border-radius: 50%;
+  margin-right: 50px;
+}
