@@ -43,21 +43,40 @@ const MainPage = () => {
   return (
 
     <div>
+      <div className={styles.emptyDiv}></div>
       <div className={styles.parentDiv}>
         <div className={styles.welcomeDiv}>
-          <h3>환영합니다!</h3>
+          <h2>환영합니다 !</h2>
           <h3>{name} {Nickname} !</h3>
         </div>
+        
         <div className={styles.circleProfile}></div>
       </div>
+      <div className={styles.recommendDiv}>
+        <div className={styles.recommendAge}>{age}세 추천 도서 </div>
+        <div className={styles.recommendAgeBook}>{recommendedBook}</div>
+      
+      </div>
       <div className={styles.buttonContainer}>
-        <button onClick={() => handleButtonClick("/book/풍풍이")} className={`${styles.bookButton} ${styles.fungfungButton}`}>풍풍이</button>
-        <button onClick={() => handleButtonClick("/book/바마")} className={`${styles.bookButton} ${styles.bamaButton}`}>바마</button>
-        <button onClick={() => handleButtonClick("/book/흥부와 놀부")} className={`${styles.bookButton} ${styles.heungbuButton}`}>흥부와 놀부</button>
+        <div>
+          <button onClick={() => handleButtonClick("/book/풍풍이")} className={`${styles.bookButton} ${styles.fungfungButton}`}>img</button>
+          <a>풍풍이</a>
+        </div>
+        <div>
+          <button onClick={() => handleButtonClick("/book/바마")} className={`${styles.bookButton} ${styles.bamaButton}`}>img</button>
+          <a>바마</a>
+        </div>
+        <div>
+          <button onClick={() => handleButtonClick("/book/흥부와 놀부")} className={`${styles.bookButton} ${styles.heungbuButton}`}>img</button>
+          <a>흥부와 놀부</a>
+        </div>
+        <div>
+        <button onClick={() => handleButtonClick("/book/흥부와 놀부")} className={`${styles.bookButton} ${styles.heungbuButton}`}>img</button>
+        <a>똑똑한 부엉이로 ~</a>
+        </div>
+  
       </div>
-      <div>
-      <p>{age}세에 맞는 책을 추천합니다 {recommendedBook}</p>
-      </div>
+      <div className={styles.smartowlUrl}> 더 많은 도서 이용하기 </div>    
     </div>
     
 

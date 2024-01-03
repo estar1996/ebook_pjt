@@ -3,7 +3,7 @@
 
 .bookImage {
     width : 360px;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
     display: grid;
     place-items: center;
@@ -39,7 +39,7 @@
 
 .buttonContainer {
     position: fixed; /* 고정 위치 */
-    bottom: 0; /* 화면 하단에 위치 */
+    bottom: 50; /* 화면 하단에 위치 */
     left: 0; /* 화면 왼쪽에 위치 */
     width: 100%; /* 전체 너비 */
     display: flex;
@@ -47,4 +47,18 @@
     padding: 10px; /* 적당한 패딩 */
     background-color: #f8f8f8; /* 배경 색상 */
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* 상단에 그림자 효과 */
+}
+
+.bookContentsDiv {
+    margin-top: 50px;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upNavy {
+    width: 100%;
+    background-color: black;
 }

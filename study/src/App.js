@@ -7,6 +7,7 @@ import RegisterPage from './components/RegisterPage';
 import MainPage from './components/MainPage';
 import QuizPage from './components/QuizPage';
 import quizData from './components/quizData';
+import AdBanner from './components/adBanner';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/quiz/:bookTitle" element={<QuizPage quizData={quizData} />} />
 
       </Routes>
+      <AdBanner/>
     </Router>
   );
 }

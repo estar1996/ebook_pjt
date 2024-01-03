@@ -1,32 +1,50 @@
 .bookButton {
-    width: 80%; /* 버튼을 전체 너비로 설정 */
-    height: 100px;
-    padding: 10px 20px; /* 패딩 추가 */
-    margin: 5px 0; /* 상하 마진 추가 */
+    width: 120px; /* 버튼을 전체 너비로 설정 */
+    height: 120px;
+    padding: 10px;
+
+    margin: 10px;
     border: none; /* 테두리 제거 */
-    border-radius: 5px; /* 둥근 테두리 추가 */
+    border-radius: 50%; /* 둥근 테두리 추가 */
     color: white; /* 글자색 */
     font-size: 16px; /* 글자 크기 */
     cursor: pointer; /* 커서 스타일 */
+
+    transition: transform 0.1s, box-shadow 0.1s;
     
   }
+.bookButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
   
+.emptyDiv {
+  width: 80%;
+  height: 40px;
+}
+
   .fungfungButton {
-    background-color: #6e55ff; /* 풍풍이 버튼 색상 */
+    background-color: hsl(250, 100%, 94%); /* 풍풍이 버튼 색상 */
   }
   
   .bamaButton {
-    background-color: #41aaff; /* 바마 버튼 색상 */
+    background-color: rgb(221, 240, 255); /* 바마 버튼 색상 */
   }
   
   .heungbuButton {
-    background-color: #69c94c; /* 흥부와 놀부 버튼 색상 */
+    background-color: #daf3d3; /* 흥부와 놀부 버튼 색상 */
   }
 
 .buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+  grid-gap: 10px;
   text-align: center;
-  justify-content: center; /* 가로 방향 중앙 정렬 */
-  align-items: center; /* 세로 방향 중앙 정렬 */
+  padding: 30px;
+  justify-content: center; 
+  align-items: center;
 }
 
 .welcomeDiv {
@@ -45,6 +63,55 @@
   width: 100px;
   height: 100px;
   background-color: #C6C6E8;
-  border-radius: 50%;
+  border-radius: 40%;
   margin-right: 50px;
+}
+
+.recommendDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top: 0.1px solid #FFF1EC;    /* 매우 얇은 상단 테두리 */
+  border-bottom: 0.5px solid #FFF1EC; /* 매우 얇은 하단 테두리 */
+  background-color: #FFF1EC;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);;
+  align-items: center;
+}
+
+
+/* F5D1BC */
+  /* ffa775 */
+.recommendAge {
+  padding: 3px;
+  margin-left: 40px;
+  color: #C5A399;
+  font-size: 13px;
+
+}
+
+.recommendAgeBook {
+  padding: 4px;
+  margin-left: 30px;
+  border-radius: 20px;
+  background-color: #ffc0a9;
+  text-align: center;
+  box-shadow: 0px 0px 1px rgb(255, 139, 72);
+  color: #733A27;
+}
+
+.smartowlUrl {
+  position: fixed;
+  width: 90%;
+  height: 130px;
+  border-radius: 10px;
+  margin: 10px;
+  
+  background-color: #f0cf63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }

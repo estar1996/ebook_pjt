@@ -19,6 +19,7 @@ const RegisterPage = () => {
 
     return (
         <form onSubmit={handleSubmit} className={styles.registerForm}>
+            <div className={styles.title}>Smartowl</div>
             <div className={styles.imageContainer}>
                 {/* <img className={styles.registerImage} src="https://smartowl9910.cafe24.com/web/other/seo/smartowl.jpg"></img> */}
                 {/* {<img className={styles.registerImage} src="images/register/circleimg.png"/>} */}
@@ -34,7 +35,7 @@ const RegisterPage = () => {
                     onChange={(e) => setName(e.target.value)}
                 />
             
-                <label htmlFor="age" className={styles.label}>아이 나이</label>
+                <label htmlFor="age" className={styles.label}>나이</label>
                 <input
                     type="number"
                     id="age"
@@ -43,7 +44,7 @@ const RegisterPage = () => {
                     onChange={(e) => setAge(e.target.value)}
                 />
             
-                <label htmlFor="gender" className={styles.label}>아이 성별</label>
+                <label htmlFor="gender" className={styles.label}>성별</label>
                 <select
                 id="gender"
                 value={gender}
@@ -56,9 +57,9 @@ const RegisterPage = () => {
                 </select>
             </div>
             {/* <div className="buttonContainer"> */}
-            <div className={styles.buttonContainer}>
+            {/* <div className={styles.buttonContainer}> */}
                 <button type="submit" className={styles.button}>등 록</button>
-            </div>
+            {/* </div> */}
         </form>
     );
 

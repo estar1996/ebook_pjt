@@ -71,17 +71,24 @@ const Book = () => {
         navigate(`/quiz/${bookTitle}`);
     }
 
-
+    const goToBack = () => {
+        navigate(`/main`)
+    }
 
 
     return (
+        
 
         <div
           onTouchStart={handleTouchStart}
           onTouchMove={isDragging ? handleTouchMove : null}
           onTouchEnd={handleTouchEnd}
-        >
-            <div>
+        >   
+        <div className={styles.upNavy}>
+            <button onClick={goToBack}>뒤로가기아이콘</button>
+
+        </div>
+            <div className={styles.ebookDiv}>
                 {pages[currentPage]}
             </div>
             {isLastPage && (
