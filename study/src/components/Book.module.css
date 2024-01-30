@@ -2,9 +2,9 @@
 
 
 .bookImage {
-    width : 360px;
+    width : 400px;
     height: 300px;
-    border-radius: 8px;
+    border-radius: 10px;
     display: grid;
     place-items: center;
     margin: 0px;
@@ -50,7 +50,6 @@
 }
 
 .bookContentsDiv {
-    margin-top: 50px;
     padding: 10px;
     height: 300px;
     display: flex;
@@ -61,4 +60,13 @@
 .upNavy {
     width: 100%;
     background-color: black;
+}
+
+
+
+.ebookContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }

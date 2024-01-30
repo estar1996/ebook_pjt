@@ -11,14 +11,12 @@
 }
 
 body {
-  /* font-family: Arial, sans-serif; */
   font-family: "NEXONLv1GothinRegular";
   font-weight: bold;
-  /* background-image: url('../public/images/background/ebookimage.png'); */
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  /* color: white; */
+  padding: 3px;
 }
 
 code {
@@ -55,3 +53,4 @@ code {
   padding: 10px;
   margin : 10px;
 }
+

@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import styles from './RegisterPage.module.css';
+import { CSSTransition } from 'react-transition-group';
+import './transition.css';
+import Modal from './Modal';
+
 
 const RegisterPage = () => {
     const [name, setName] = useState('');
@@ -8,10 +12,24 @@ const RegisterPage = () => {
     const [gender, setGender] = useState('');
     const navigate = useNavigate();
 
+    const profileImages = [
+        'images/register/bear.png',
+        'images/register/cat.png',
+        'images/register/fox.png',
+        'images/register/lion.png',
+    ];
+    const [selectedImage, setSelectedImage] = useState(profileImages[0]);
+
+    const [showImageSelector, setShowImageSelector] = useState(false);
+    const toggleImageSelector = () => {
+        setShowImageSelector(!showImageSelector);
+    };
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const toggleModal = () => setIsModalOpen(!isModalOpen);
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // api 추가 가능
-        navigate('/main', { state: {name, age, gender}});
+        navigate('/main', { state: {name, age, gender, selectedImage}});
         console.log({age,gender});
     };
 
@@ -21,10 +39,45 @@ const RegisterPage = () => {
         <form onSubmit={handleSubmit} className={styles.registerForm}>
             <div className={styles.title}>Smartowl</div>
             <div className={styles.imageContainer}>
-                {/* <img className={styles.registerImage} src="https://smartowl9910.cafe24.com/web/other/seo/smartowl.jpg"></img> */}
-                {/* {<img className={styles.registerImage} src="images/register/circleimg.png"/>} */}
-                <div className={styles.circleProfile}></div>
+                <div 
+                    className={styles.circleProfile} 
+                    style={{ backgroundImage: `url(${selectedImage})` }}
+                    onClick={toggleImageSelector}
+                ></div>
+                {showImageSelector && (
+                    <div className={styles.imageSelector}>
+                        {profileImages.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Profile ${index + 1}`}
+                                className={styles.profileImage}
+                                onClick={() => {
+                                    setSelectedImage(image);
+                                    toggleImageSelector();
+                                }}
+                            />
+                        ))}
+                    </div>
+                    
+                )}
             </div>
+            <Modal isActive={isModalOpen} onClose={toggleModal}>
+                    <div className={styles.imageSelector}>
+                        {profileImages.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Profile ${index + 1}`}
+                                className={`${styles.profileImage} ${selectedImage === image ? styles.selected : ''}`}
+                                onClick={() => {
+                                    setSelectedImage(image);
+                                    toggleModal();
+                                }}
+                            />
+                        ))}
+                    </div>
+            </Modal>
             <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.label}>아이 이름(별명)</label>
                 <input
@@ -56,10 +109,7 @@ const RegisterPage = () => {
                     <option value="female">여자</option>
                 </select>
             </div>
-            {/* <div className="buttonContainer"> */}
-            {/* <div className={styles.buttonContainer}> */}
                 <button type="submit" className={styles.button}>등 록</button>
-            {/* </div> */}
         </form>
     );
 
@@ -68,3 +118,5 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
+
+

@@ -11,6 +11,10 @@
     cursor: pointer; /* 커서 스타일 */
 
     transition: transform 0.1s, box-shadow 0.1s;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
     
   }
 .bookButton:active {
@@ -114,4 +118,24 @@
   align-items: center;
   justify-content: center;
   
+}
+
+.circleProfile {
+  width: 130px;
+  height: 130px;
+  /* background-color: #C6C6E8; */
+  background-color: #F5D1BC;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; 
+}
+
+
+
+.columnSort {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
