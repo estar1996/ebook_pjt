@@ -85,7 +85,7 @@ const Book = () => {
           onTouchEnd={handleTouchEnd}
         >   
         <div className={styles.upNavy}>
-            <button onClick={goToBack}>뒤로가기아이콘</button>
+            <button className={styles.Backbutton} onClick={goToBack}>Back</button>
 
         </div>
             <div className={styles.ebookDiv}>

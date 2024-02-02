@@ -18,7 +18,9 @@ body {
   background-repeat: no-repeat;
   padding: 3px;
 }
-
+@media screen and (max-width: 600px) {
+  /* 모바일 디바이스를 위한 스타일 */
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

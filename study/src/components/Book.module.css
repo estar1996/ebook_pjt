@@ -2,7 +2,7 @@
 
 
 .bookImage {
-    width : 400px;
+    width : 360px;
     height: 300px;
     border-radius: 10px;
     display: grid;
@@ -59,7 +59,7 @@
 
 .upNavy {
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -70,3 +70,42 @@
     text-align: center;
     align-items: center;
 }
+
+.Backbutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #72afff; /* 녹색 배경 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .Backbutton:hover {
+    background-color: #45a049; /* 버튼 호버 시 색상 변경 */
+  }
+  
+  .Backbutton:focus {
+    outline: none; /* 포커스 시 윤곽선 제거 */
+  }
+  
+  /* 공통 애니메이션 효과 */
+  @-webkit-keyframes backbutton-hover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes backbutton-hover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* 호버 시 애니메이션 적용 */
+  .Backbutton:hover {
+    -webkit-animation: backbutton-hover 0.5s ease-in-out;
+    animation: backbutton-hover 0.5s ease-in-out;
+  }
+  

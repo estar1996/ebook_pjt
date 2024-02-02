@@ -113,10 +113,11 @@
   border-radius: 10px;
   margin: 10px;
   
-  background-color: #f0cf63;
+  background-color: #abc2ff;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   
 }
 
